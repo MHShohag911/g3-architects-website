@@ -87,6 +87,7 @@ main {
 .teams-container {
     display: flex;
     align-items: center;
+    margin-top: 50px;
 }
 
 .teams-img-container {
@@ -203,6 +204,19 @@ main {
     width: 165px;
 }
 
+/* Footer CSS */
+footer>p {
+    text-align: center;
+    padding: 25px 100px;
+    background-color: #FFF4E6;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+footer > p>span::after {
+    content: '\0040';
+}
 
 
 
@@ -244,6 +258,11 @@ main {
         gap: 20px;
     }
 
+    footer>p {
+        width: 100%;
+        padding: 50px 0px;
+    }
+
 }
 
 /* Tablet or Medium Devices */
@@ -255,9 +274,25 @@ main {
     nav,
     .features,
     .teams-container,
-    .sponsors-img-container
+    .sponsors-img-container,
+    .facts-card-container
     {
         flex-direction: column;
+    }
+
+    .facts-card-container {
+        gap: 20px;
+        margin:auto;
+    }
+
+    .feature-img img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    footer>p {
+        width: 100%;
+        padding: 50px 0px;
     }
 }
 
